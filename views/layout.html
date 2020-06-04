@@ -1,0 +1,205 @@
+<!-- BEGIN: LAYOUT -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>VIETSUNBA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/7c67c69820.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="{x}images/VS.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="{x}fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="{x}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{x}css/jquery-ui.css">
+    <link rel="stylesheet" href="{x}css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{x}css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{x}css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="{x}css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="{x}css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="{x}fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="{x}css/aos.css">
+
+    <link rel="stylesheet" href="{x}css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo">
+                <a href="{x}home" class="h2 mb-0">
+                    <img src="{x}images/VS.ico" style="width: 50px; height: 50px;" alt="">
+                </a>
+            </h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="{x}home" onclick="window.location.assign('{x}home')" class="nav-link">Trang Chủ</a></li>
+                <li><a href="{x}home#about-section" onclick="window.location.assign('{x}home#about-section')" class="nav-link">Về Chúng Tôi</a></li>
+                <li class="has-children">
+                  <a href="{x}huongdan" onclick="window.location.assign('{x}huongdan')" class="nav-link">Hướng Dẫn Sử Dụng</a>
+                  <ul class="dropdown">
+                    <li><a href="{x}huongdan/tongquan" onclick="window.location.assign('{x}huongdan/tongquan')" class="nav-link">Tổng quan</a></li>
+                    <li><a href="{x}huongdan/thaotacchung" onclick="window.location.assign('{x}huongdan/thaotacchung')" class="nav-link">Thao tác chung</a></li>
+                    <li><a href="{x}huongdan/hethong" onclick="window.location.assign('{x}huongdan/hethong')" class="nav-link">Hệ thống</a></li>
+                    <li><a href="{x}huongdan/tienvon" onclick="window.location.assign('{x}huongdan/tienvon')" class="nav-link">Hệ tiền vốn</a></li>
+                    <li><a href="{x}huongdan/muahang" onclick="window.location.assign('{x}huongdan/muahang')" class="nav-link">Hệ mua hàng</a></li>
+                    <li><a href="{x}huongdan/banhang" onclick="window.location.assign('{x}huongdan/banhang')" class="nav-link">Hệ bán hàng</a></li>
+                    <li><a href="{x}huongdan/khohang" onclick="window.location.assign('{x}huongdan/khohang')" class="nav-link">Hệ kho hàng</a></li>
+                    <li><a href="{x}huongdan/tscd" onclick="window.location.assign('{x}huongdan/tscd')" class="nav-link">Hệ TSCD</a></li>
+                    <li><a href="{x}huongdan/cccp"onclick="window.location.assign('{x}huongdan/cccp')" class="nav-link">Hệ CCCP</a></li>
+                    <li><a href="{x}huongdan/nvkt" onclick="window.location.assign('{x}huongdan/nvkt')" class="nav-link">Nghiệp vụ kế toán</a></li>
+                    <li><a href="{x}huongdan/ktth"onclick="window.location.assign('{x}huongdan/ktth')" class="nav-link">Kế toán tổng hợp</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="{x}home#contact-section" class="nav-link">Liên Hệ</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="content" style="height: auto;">{content}</div>
+     
+    <footer class="site-footer" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                  <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                  <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
+                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <form action="#" method="post" class="footer-subscribe">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+  <button id="topBtn" class="bg-primary"><i class="fas fa-chevron-up"></i></button>
+  <script src="{x}js/jquery-3.3.1.min.js"></script>
+  <script src="{x}js/jquery-ui.js"></script>
+  <script src="{x}js/popper.min.js"></script>
+  <script src="{x}js/bootstrap.min.js"></script>
+  <script src="{x}js/owl.carousel.min.js"></script>
+  <script src="{x}js/jquery.countdown.min.js"></script>
+  <script src="{x}js/jquery.easing.1.3.js"></script>
+  <script src="{x}js/aos.js"></script>
+  <script src="{x}js/jquery.fancybox.min.js"></script>
+  <script src="{x}js/jquery.sticky.js"></script>
+  <script src="{x}js/isotope.pkgd.min.js"></script>
+
+  
+  <script src="{x}js/main.js"></script>
+    
+  </body>
+  <script>
+    $(document).ready(function(){
+
+    $(window).scroll(function(){
+      if($(this).scrollTop() > 40){
+        $('#topBtn').fadeIn();
+      } else{
+        $('#topBtn').fadeOut();
+      }
+    });
+
+    $("#topBtn").click(function(){
+      $('html ,body').animate({scrollTop : 0},800);
+    });
+    });
+    
+  </script>
+</html>
+<style>
+  #topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    border-radius: 10px;
+  }
+</style>
+<!-- END: LAYOUT -->

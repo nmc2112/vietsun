@@ -1,0 +1,42 @@
+<!-- BEGIN: OUT -->
+<form class="form-inline ml-3">
+    <div class="input-group input-group-md">
+      <input class="form-control form-control" id="search_text" name="txtSearch" type="text" placeholder="Search" aria-label="Search">
+    </div>
+</form>
+<div id="result"></div>
+<style>
+    th,td{
+        text-align: center;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+        load_data();
+        function load_data(query){
+            $.ajax({
+            url:'../../search/search_clients.php',
+            method:'GET',
+            data:{query:query},
+            dataType:'text',
+            success:function(data){
+                $('#result').html(data);
+            },
+            error:function(){
+                alert("dcmm");
+            }
+            })
+        }
+        $('#search_text').keyup(function(){
+            var txt = $(this).val();
+            if(txt != ''){
+                load_data(txt);
+            }
+            else{
+                load_data();
+            }
+        })
+    })
+</script>
+<!-- END: OUT -->
