@@ -100,7 +100,7 @@
     </header>
 
     <div class="content" style="height: auto;">{content}</div>
-     
+    <div class="fb-customerchat"page_id="<PAGE_ID>"></div>
     <footer class="site-footer" >
       <div class="container">
         <div class="row">
@@ -150,9 +150,15 @@
         </div>
       </div>
     </footer>
-
+  <div id="fb-root"></div>
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="102222871527254"
+  logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn"
+  logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho bạn">
+  </div>
   </div> <!-- .site-wrap -->
-  <button id="topBtn" class="bg-primary"><i class="fas fa-chevron-up"></i></button>
+  <!-- <button id="topBtn" class="bg-primary"><i class="fas fa-chevron-up"></i></button> -->
   <script src="{x}js/jquery-3.3.1.min.js"></script>
   <script src="{x}js/jquery-ui.js"></script>
   <script src="{x}js/popper.min.js"></script>
@@ -202,4 +208,21 @@
     border-radius: 10px;
   }
 </style>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 <!-- END: LAYOUT -->
+
